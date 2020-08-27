@@ -1,96 +1,95 @@
-<div align="center">
-  <img src="https://github.com/gabrielpulga/nlw2-proffy/blob/master/.github/logo.svg" alt"Proffy" title="Proffy" />
+<h1 align="center">
+     <img src="https://github.com/gabrielpulga/nlw2-proffy/blob/master/.github/logo.svg" alt"Proffy" title="Proffy" />
+    
+    Node.js | ReactJS | React Native
+</h1>
 
- :rocket: *Project made to connect students to teachers.*
-  </div>
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/HigorSnt/proffy?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HigorSnt/proffy?style=flat-square">
+  <img alt="GitHub" src="https://img.shields.io/github/license/HigorSnt/proffy?style=flat-square"> 
+  <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1?style=flat-square"><br/>
+  <a href="https://insomnia.rest/run/?label=Proffy&uri=https%3A%2F%2Fraw.githubusercontent.com%2FHigorSnt%2Fproffy%2Fmaster%2F.github%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+</p>
+<p align="center">
+  <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#boom-como-executar">Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-# :pushpin: Table of contents
+<p align="center">
+  <img alt="design do projeto" width="650px" src="./.github/design.png" />
+<p>
 
-- [Technologies](#computer-technologies)
-- [How to run](#construction_worker-how-to-run)
-- [ToDo](#memo-todo)
-- [License](#closed_book-license)
+## :bookmark: Sobre
 
-# :computer: Technologies
-
-This project was made using the following technologies:
-
-<ul>
-  <li><a href="https://nodejs.org/en/docs/">NodeJs</a></li>
-  <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-  <li><a href="https://pt-br.reactjs.org/">React</a></li>
-  <li><a href="https://reactnative.dev/">React Native</a></li>
-  <li><a href="https://expo.io/">Expo</a></li>
-</ul>
-
-# :construction_worker: How to run
+O **Proffy** é uma aplicação Web e Mobile feita para auxiliar na conexão entre os alunos e os professores. Logo, esta aplicação oferece aos professores a possibilidade de registrar aulas, podendo adicionar informações como a disciplina, o custo e horário e aos alunos a possibilidade de buscar pelas aulas cadastradas.
+  
+Este projeto foi idealizado pensando no **6 de agosto**, onde se comemora o **Dia Nacional dos Profissionais da Educação**.
+  
 
 
+## :rocket: Tecnologias
 
-### 💻 Running project on a web browser
+-  [Typescript](https://www.typescriptlang.org/)
+-  [Node.js](https://nodejs.org/en/)
+-  [ReactJS](https://reactjs.org/)
+-  [React Native](http://facebook.github.io/react-native/)
+-  [Expo](https://expo.io/)
+-  [Express](https://expressjs.com/)
+-  [axios](https://github.com/axios/axios)
 
-#### Front-end
+## :boom: Como Executar
 
-```bash
-# Go to project's web folder
-$ cd web
+- ### **Pré-requisitos**
 
-# Install dependencies
-$ yarn install or npm install
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
+  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
+  - Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
+  - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
 
-# Run application
-$ yarn start or npm run start
+1. Faça um clone do repositório:
+
+```sh
+   $ git clone https://github.com/pablohga/sistemaproffy-ead-web
+   $ git clone https://github.com/pablohga/sistemaproffy-ead-api
+   $ git clone https://github.com/pablohga/sistemaproffy-ead-app
+  
 ```
 
-Front-end UX available at http://localhost:3000/.
+2. Executando a Aplicação:
 
-#### Back-end
+```sh
+  # API
+  $ cd sistemaproffy-ead-api
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Configurando o banco de dados e criando as tabelas.
+  $ yarn knex:migrate # ou npm run knex:migrate
 
-```bash
-# Go to project's server folder
-$ cd server
+  # Inicie a API
+  $ yarn start # ou npm start
 
-# Install dependencies
-$ yarn install or npm install
+  # Aplicação web
+  $ cd sistemaproffy-ead-web
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Inicie a aplicação web
+  $ yarn start # ou npm start
 
-# Run application
-$ yarn start or npm run start
-
-# Make migrations
-$ yarn knex:migrate
+  # Aplicação mobile
+  $ cd sistemaproffy-ead-app
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Inicie a aplicação mobile
+  $ yarn start # ou npm start
 ```
 
-API available to be tested on http://localhost:3333/.
 
-### 📱 Running project on mobile
+## :memo: Licença
 
-To run the project on mobile you need a cellphone with the [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) app instaled or an android/ios emulator.
-<br />
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-```bash
-# Go to project's mobile folder
-$ cd mobile/
+---
 
-# Install dependencies
-$ yarn install  or npm install
-
-# Run application
-$ yarn start or npm run start
-```
-
-<!--You can read the resulting QRCode with [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) or through an emulator.-->
-
-# :memo: ToDo
-
- - Splash screen
- - User Login -> Remember me
- - User Logout
- - Succeed Screen
- - User auth -> Web and Mobile
- - Password recovery
- - Teacher profile
- - Deploy
-
-# :closed_book: License
-
-Released in 2020.
